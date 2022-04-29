@@ -1,9 +1,16 @@
+import Home from './components/Home';
+import Search from './components/Search';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      App mi app
+      Venta de productos
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/search' element={<Search />} />
+      </Routes>
     </div>
   );
 }
