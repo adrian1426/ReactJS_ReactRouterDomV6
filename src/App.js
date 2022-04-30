@@ -25,6 +25,7 @@ function App() {
         <Route path='/tacos/:name' element={<Tacos />}>
           <Route path='details' element={<TacosDetail />} />
         </Route>
+        <Route path='*' element={<h1>No entontrado 404</h1>} />
       </Routes>
     </div>
   );
