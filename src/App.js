@@ -3,6 +3,7 @@ import Search from './components/Search';
 import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Tacos from './components/Tacos';
+import TacosDetail from './components/TacosDetail';
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/search' element={<Search />} />
-        <Route path='/tacos/:name' element={<Tacos />} />
+        <Route path='/tacos/:name' element={<Tacos />}>
+          <Route path='details' element={<TacosDetail />} />
+        </Route>
       </Routes>
     </div>
   );
