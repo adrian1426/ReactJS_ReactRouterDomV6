@@ -4,6 +4,7 @@ import { Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Tacos from './components/Tacos';
 import TacosDetail from './components/TacosDetail';
+import TacosIndex from './components/TacosIndex';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/search' element={<Search />} />
         <Route path='/tacos/:name' element={<Tacos />}>
+          <Route index element={<TacosIndex />} />
           <Route path='details' element={<TacosDetail />} />
         </Route>
         <Route path='*' element={<h1>No entontrado 404</h1>} />
