@@ -1,10 +1,11 @@
 import Home from './components/Home';
 import Search from './components/Search';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Tacos from './components/Tacos';
 import TacosDetail from './components/TacosDetail';
 import TacosIndex from './components/TacosIndex';
+import NavLinkActive from './components/NavLinkActive';
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
 
         <nav>
           <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/search'>search</Link></li>
+            <li><NavLinkActive to='/'>Home</NavLinkActive></li>
+            <li><NavLinkActive to='/search'>search</NavLinkActive></li>
           </ul>
         </nav>
       </header>

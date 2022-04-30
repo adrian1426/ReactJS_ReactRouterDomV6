@@ -24,3 +24,9 @@ header {
 nav ul {
   list-style-type: none;
 }
+
+.is-active {
+  color: blue;
+  font-weight: bold;
+  pointer-events: none;
+}
